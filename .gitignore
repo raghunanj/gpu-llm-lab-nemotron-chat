@@ -1,0 +1,60 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment files with secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+/tmp/
+
+# Model cache (large files)
+*.bin
+*.safetensors
+*.gguf
+
+# HuggingFace cache
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Intermediary scripts (development only)
+monitor_download.sh
+benchmark_inference.py
+
+# API keys and tokens (NEVER commit these)
+*token*
+*secret*
+*credentials*
+

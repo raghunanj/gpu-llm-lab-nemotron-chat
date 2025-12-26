@@ -1,0 +1,37 @@
+# Core Dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# LLM & AI
+openai>=1.0.0           # For API compatibility layer
+transformers>=4.36.0    # For local model loading
+torch>=2.0.0            # PyTorch for model inference
+accelerate>=0.25.0      # For efficient model loading
+
+# NVIDIA specific
+# cuda-tile              # cuTile Python (install separately, requires CUDA 13.1+)
+# nvidia-nemo            # NeMo toolkit (optional, for advanced use)
+
+# Vector Store & RAG
+faiss-cpu>=1.7.4        # Vector similarity search (use faiss-gpu if NVIDIA GPU available)
+chromadb>=0.4.0         # Alternative vector store
+sentence-transformers>=2.2.0  # Embeddings
+
+# Web Interface
+gradio>=4.0.0           # Web UI
+fastapi>=0.104.0        # API server
+uvicorn>=0.24.0         # ASGI server
+
+# Utilities
+httpx>=0.25.0           # Async HTTP client
+tenacity>=8.2.0         # Retry logic
+rich>=13.0.0            # Beautiful terminal output
+typer>=0.9.0            # CLI framework
+
+# Development
+pytest>=7.4.0
+black>=23.0.0
+ruff>=0.1.0
+
+
